@@ -1,40 +1,134 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task 8: User Authentication
 
-## Getting Started
+This project implements a secure user authentication system using **NextAuth** and integrates it with custom backend API endpoints for user registration and login. The goal is to build a functional and user-friendly authentication flow with clean UI and best practices.
 
-First, run the development server:
+## 🔐 Features
 
-```bash
+- Signup and Signin pages with proper UI and form validation
+- API integration with Akil backend for:
+  - User registration (`/Signup`)
+  - Email verification (`/verify)
+  - User login (`/api/auth/signin`)
+- Secure storage of access tokens
+- Client-side form validation
+- Responsive design and accessibility features
+
+---
+
+## 📸 Screenshots
+
+### 📝 Signup Page
+
+<img width="1886" height="865" alt="Screenshot 2025-07-29 202853" src="https://github.com/user-attachments/assets/0e502337-9a54-4153-bc43-c41beee0c021" />
+
+
+> Users can create an account with full validation, and their information is sent to the backend for processing.
+
+---
+
+### 🔑 Signin Page
+
+<img width="1882" height="849" alt="Screenshot 2025-07-29 202838" src="https://github.com/user-attachments/assets/b8e92286-99ac-4e82-b3e0-8f13ed802866" />
+
+
+> Users can log in using their credentials. The access token is securely stored and used for future authenticated requests.
+
+---
+### verify page
+<img width="1846" height="823" alt="Screenshot 2025-07-29 203145" src="https://github.com/user-attachments/assets/f7b9c1dd-0698-49dc-9dfa-2bdd6836c547" />
+<img width="1477" height="691" alt="Screenshot 2025-07-29 203212" src="https://github.com/user-attachments/assets/8f02cd74-02cc-4753-88b1-2702772b17fc" />
+
+
+---
+---
+<img width="1846" height="810" alt="Screenshot 2025-07-29 203304" src="https://github.com/user-attachments/assets/33df6671-92e7-4290-8e7a-0441fade43bf" />
+
+<img width="1678" height="630" alt="Screenshot 2025-07-29 203243" src="https://github.com/user-attachments/assets/2e10bfbe-89d3-483f-a979-9a1c25ddbd5f" />
+<img width="1846" height="810" alt="Screenshot 2025-07-29 203304" src="https://github.com/user-attachments/assets/1dea5f3f-87ba-4c93-bbda-58815eae8047" />
+
+
+---
+
+
+
+
+## ⚙️ Technologies Used
+
+- **NextAuth.js**
+- **React**
+- **Next.js**
+- **Tailwind CSS**
+- **TypeScript**
+- **Fetch API**
+- **axios**
+
+---
+
+## 🔗 API Endpoints
+
+Base URL: `https://akil-backend.onrender.com`
+
+| Endpoint        | Method | Description                  |
+|-----------------|--------|------------------------------|
+| `/signup`       | POST   | Registers a new user         |
+| `/verify-email` | POST   | Verifies email with OTP      |
+| `/login`        | POST   | Authenticates existing user  |
+
+### 📤 Sample Payloads
+
+#### Signup
+```json
+{
+  "name": "Izzat Engida",
+  "email": "izzat.engida@a2sv.org",
+  "password": "123456789",
+  "confirmPassword": "123456789",
+  "role": "user"
+}
+
+Login
+
+{
+  "email": "izzat.engida@a2sv.org",
+  "password": "123456789"
+}
+
+Verify Email
+
+{
+  "email": "izzat.engida@a2sv.org",
+  "OTP": "123456"
+}
+
+✅ Validation Rules
+
+    Email must be valid and non-empty
+
+    Confirm password must match password
+
+    All fields are required
+
+    Feedback is shown for both success and error states
+
+
+📝 How to Run Locally
+
+    Clone the repo:
+
+git clone https://github.com/Izzat-Engida/task8.git
+cd task8
+
+Install dependencies:
+
+npm install
+
+Add .env.local file:
+
+NEXTAUTH_SECRET=your_secret
+NEXTAUTH_URL=http://localhost:3000
+GOOGLE_ID=your_id
+GOOGLE_Secret=your_secret
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# A2sv-web-track-tasks
->>>>>>> 74e8d2e93a8d70052f4fe82d9107ae0b15c780f6
