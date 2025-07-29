@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/hp/OneDrive/Desktop/task4/job/app/images/job1.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 67, height: 59, blurWidth: 8, blurHeight: 7, blurDataURL: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAA8klEQVR42gHnABj/AAcHBwBzcV0c4NNoiu7dRsft3k+94NNljnRzXh8KCgoAAD0+NwrRz3Z68N9Qu/DiZqft5oOJ799SvNTSeX5ERD0MAGVlUhfi3HmK7uFfr+bim2Ll4pxh8eFeruHac49lZVMYAFVVTwvd0nOA+dkY+NXLd3PTy31s+dkY+NzSbYdWWVENAJmZdS7t5o159tw02+jYWqfn2WGg9twu3+vlhIWipXs8AE1NRA7e1HGA7+Batu/dS8bu3k7B7t9Wt+LXb4pWVkkUAAgICABtbFka3NFsg+7cQcvt3EXG2s9ugG1rWRsLCwsALrJ6odC5dUYAAAAASUVORK5CYII=\"};\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;IAAI,WAAW;IAAG,YAAY;IAAG,aAAa;AAAwa","debugId":null}}]
+}

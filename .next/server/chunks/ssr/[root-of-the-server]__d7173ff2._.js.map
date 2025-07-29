@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/hp/OneDrive/Desktop/tasks/task8/app/SignIn/page.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nfunction SignIn() {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default SignIn\r\n"],"names":[],"mappings":";;;;;AAEA,SAAS;IACP,qBACE,8OAAC;;;;;AAIL;uCAEe","debugId":null}}]
+}

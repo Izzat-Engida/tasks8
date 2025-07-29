@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/hp/OneDrive/Desktop/task4/job/app/page.tsx"],"sourcesContent":["import CardComponent from \"./components/CardComponent\";\ntype Posting = {\n  title: string;\n  description: string;\n  responsibilities: string[];\n  ideal_candidate: {\n    age: string;\n    gender: string;\n    traits: string[];\n  };\n  when_where: string;\n  about: {\n    posted_on: Date;\n    deadline: Date;\n    location: string;\n    start_date: string;\n    end_date: string;\n    categories: string[];\n    required_skills: string[];\n  };\n  company: string;\n  image: string;\n};\n\ntype JobData = {\n  job_postings: Posting[];\n};\n\nexport default async function Home() {\n  const res = await fetch(\n    \"https://drive.google.com/uc?export=download&id=1QAObCWl5f0Ytc3bUHRREdNVBd4P-dO07\"\n  );\n  const data: JobData = await res.json();\n\n  return (\n    <div>\n      \n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AA4Be,eAAe;IAC5B,MAAM,MAAM,MAAM,MAChB;IAEF,MAAM,OAAgB,MAAM,IAAI,IAAI;IAEpC,qBACE,8OAAC;;;;;AAIL","debugId":null}}]
+}
